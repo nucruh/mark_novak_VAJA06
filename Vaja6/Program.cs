@@ -9,11 +9,16 @@ namespace vaja6 {
 
 	// Se en komentar
     class Igralec {
+		// id igralca
         public int id;
+		// ime igralca
         public string u_ime;
+		// geslo igralca
         public string u_geslo;
+		// stevilo igralcev
         public static int stIg = 1;
 
+		// privzeti konstruktor za igralca
         public Igralec() {
             u_ime = "";
             u_geslo = "";
@@ -21,6 +26,7 @@ namespace vaja6 {
             stIg++;
         }
 
+		// lastnost ki dovoli le branje
         public int Id {
             get
             {
@@ -28,6 +34,7 @@ namespace vaja6 {
             }
         }
 
+		// lastnost, ki dovoli branje in nastavljanje imena
         public string U_ime {
             get
             {
@@ -38,7 +45,8 @@ namespace vaja6 {
                 u_ime = value.Trim();
             }
         }
-
+		
+		// lastnost ki dovoli branje in nastavljanje imena
         public string U_geslo
         {
             get
@@ -51,6 +59,7 @@ namespace vaja6 {
             }
         }
 
+		// lastnost ki vrne stevilo igralcev
         public static int StIg
         {
             get { return stIg; }
