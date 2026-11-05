@@ -10,13 +10,13 @@ namespace vaja6 {
 	// Se en komentar
     class Igralec {
 		// id igralca
-        public int id;
+        private int id;
 		// ime igralca
-        public string u_ime;
+        private string u_ime;
 		// geslo igralca
-        public string u_geslo;
+        private string u_geslo;
 		// stevilo igralcev
-        public static int stIg = 1;
+        private static int stIg = 1;
 
 		// privzeti konstruktor za igralca
         public Igralec() {
